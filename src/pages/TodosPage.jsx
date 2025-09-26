@@ -1,6 +1,3 @@
-
-// import React from 'react'
-
 // export default function TodosPage() {
 //   return (
 //     <div>
@@ -9,7 +6,6 @@
 //   )
 // }
 
-import React from "react";
 import { useGetTodosQuery } from "../features/apiSlice";
 
 export default function TodosPage() {

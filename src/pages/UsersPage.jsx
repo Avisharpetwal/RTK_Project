@@ -1,14 +1,3 @@
-// import React from 'react'
-
-// export default function UsersPage() {
-//   return (
-//     <div>
-//       <h1>User Pages</h1>
-//     </div>
-//   )
-// }
-
-import React from "react";
 import { useGetUsersQuery } from "../features/apiSlice";
 
 export default function UsersPage() {
