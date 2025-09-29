@@ -30,7 +30,7 @@ src/
 - **useMemo & useCallback** (in advanced version of Posts page) → avoid recalculations and recreating handlers  
 - **React.lazy + Suspense** → route-based code splitting for better performance  
 
-/posts → Shows posts (20 at a time, optimized with memoization)
+/posts → Shows posts (20 at a time)
 
 /users → Simple list of users
 
