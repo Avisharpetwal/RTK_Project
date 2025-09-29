@@ -33,12 +33,14 @@ export default function PostsPage() {
         value={search}
         onChange={handleSearch}
       />
+
       {filteredPosts.map((post) => (
         <PostItem key={post.id} post={post} />
       ))}
       <button onClick={() => setPage((p) => p - 1)} disabled={page === 1}>
         Prev
       </button>
+      
       <button
         onClick={() => setPage((p) => p + 1)}
         disabled={page * itemsPerPage >= posts.length}

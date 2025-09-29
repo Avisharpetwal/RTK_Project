@@ -1,12 +1,50 @@
-# React + Vite
+#  Optimized Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A beginner-friendly React project that demonstrates how to build an optimized dashboard using **Redux Toolkit** and **RTK Query**.  
+It fetches data from the [JSONPlaceholder API](https://jsonplaceholder.typicode.com) and shows **posts, users, and todos** 
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Folder Structure 
+src/
+├── app/
+│ └── store.js
+├── features/
+│ └── apiSlice.js
+├── pages/
+│ ├── PostsPage.jsx
+│ ├── UsersPage.jsx
+│ └── TodosPage.jsx
+├── components/
+│ └── PostItem.jsx
+├── App.jsx
+└── main.jsx
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+##  Features
+- **RTK Query** for fetching and caching API data  
+- **Posts Page**: shows posts (with memoized PostItem)  
+- **Users Page**: list of users with name and email  
+- **Todos Page**: list of todos with completion status  
+- **React.memo** → prevents unnecessary re-renders of post items  
+- **useMemo & useCallback** (in advanced version of Posts page) → avoid recalculations and recreating handlers  
+- **React.lazy + Suspense** → route-based code splitting for better performance  
+
+/posts → Shows posts (20 at a time, optimized with memoization)
+
+/users → Simple list of users
+
+/todos → Simple list of todos
+
+
+## Getting Started
+
+## Clone the repo :
+   https://github.com/Avisharpetwal/RTK_Project/tree/main/src
+   
+## How to Run
+ npm install
+ npm run dev
+
+
+
