@@ -23,21 +23,18 @@ src/
 
 ##  Features
 - **RTK Query** for fetching and caching API data  
-- **Posts Page**: shows posts (with memoized PostItem)  
+- **Posts Page**: shows posts 
 - **Users Page**: list of users with name and email  
 - **Todos Page**: list of todos with completion status  
 - **React.memo** → prevents unnecessary re-renders of post items  
-- **useMemo & useCallback** (in advanced version of Posts page) → avoid recalculations and recreating handlers  
-- **React.lazy + Suspense** → route-based code splitting for better performance  
+- **useMemo & useCallback** avoid recalculations and recreating   
+- **React.lazy + Suspense** → route-based code splitting
+
 
 /posts → Shows posts (20 at a time)
-
 /users → Simple list of users
-
 /todos → Simple list of todos
 
-
-## Getting Started
 
 ## Clone the repo :
    https://github.com/Avisharpetwal/RTK_Project/tree/main/src
